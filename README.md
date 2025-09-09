@@ -66,6 +66,10 @@ Testing ML workflows on synthetic environmental datasets.
 
 Climate change communication and scenario analysis.
 
+
+Author: Agbozu Ebingiye Nelvin
+Github: https://github.com/Nelvinebi
+
 📜 License
 MIT License — free to use and adapt for research and education.
 
