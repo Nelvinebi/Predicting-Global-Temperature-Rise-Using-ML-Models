@@ -6,7 +6,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
 # Load dataset
-data = pd.read_csv('data.csv', parse_dates=['date'], index_col='date')
+data = pd.read_csv('data/data.csv', parse_dates=['date'], index_col='date')
 values = data['demand'].values.reshape(-1, 1)
 
 # Normalize data
