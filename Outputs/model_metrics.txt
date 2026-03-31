@@ -1,0 +1,15 @@
+============================================================
+  MODEL EVALUATION METRICS
+  Predicting Global Temperature Rise Using ML Models
+  Author: Agbozu Ebingiye Nelvin | github.com/Nelvinebi
+============================================================
+
+Model                         MAE     RMSE       R²        CV R²
+--------------------------------------------------------------
+Ridge                      0.0579   0.0756   0.9934 0.9894±0.0025
+Random Forest              0.0860   0.1388   0.9776 0.9796±0.0057
+Gradient Boosting          0.0729   0.1177   0.9839 0.9848±0.0048
+
+Best Model : Ridge
+Features   : co2_ppm, ch4_ppb, n2o_ppb, aerosol_optical_depth, solar_irradiance_anom, enso_index, volcanic_forcing, land_use_index, urbanization_index
+Train size : 116 | Test size : 29
