@@ -22,7 +22,7 @@
 
 Global temperature rise is one of the most consequential challenges of our time, yet understanding the **quantitative relationship between climate-forcing factors and warming trends** remains computationally intensive and data-restricted for many researchers. Access to clean, structured, analysis-ready climate datasets is often a barrier for data scientists entering the climate space.
 
-There is a clear need for accessible, reproducible ML pipelines that can model the influence of greenhouse gases, aerosols, solar variability, and ENSO patterns on temperature anomalies — and project those trends into future emission scenarios.
+There is a clear need for accessible, reproducible ML pipelines that can model the influence of greenhouse gases, aerosols, solar variability, and ENSO patterns on temperature anomalies and project those trends into future emission scenarios.
 
 ---
 
@@ -111,7 +111,7 @@ The dataset is synthetically generated to mirror realistic climate-forcing dynam
 ### 🔹 Correlation Heatmap — Climate Forcing Variables
 > Pearson correlation matrix across all 9 predictors and the temperature target reveals CO₂, CH₄, and N₂O as the most strongly correlated with warming
 
-![Correlation Heatmap](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/correlation_heatmap.png)
+![Correlation Heatmap](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/correlation_heatmap.png)
 
 ---
 
