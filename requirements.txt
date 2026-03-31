@@ -5,3 +5,5 @@ seaborn
 scikit-learn
 openpyxl
 joblib
+plotly
+streamlit
