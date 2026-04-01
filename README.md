@@ -80,16 +80,16 @@ The dataset is synthetically generated to mirror realistic climate-forcing dynam
 
 ## ⚙️ Methodology / Project Workflow
 
-1. **Data Loading & Inspection** — Load 145-year Excel dataset; verify all 9 features and target; confirm zero null values
+1. **Data Loading & Inspection:** Load 145-year Excel dataset; verify all 9 features and target; confirm zero null values
 2. **Exploratory Data Analysis (EDA)** : Generate correlation heatmap across all 10 variables; plot historical temperature anomaly trend with 10-year rolling mean and Paris Agreement thresholds
-3. **Feature Engineering** : Use all 9 climate-forcing variables as predictors; apply `StandardScaler` for fair cross-model comparison
-4. **Train / Test Split** : 80/20 random shuffle split (116 train / 29 test, `random_state=42`)
-5. **Model Training** : Train three regressors: Ridge Regression, Random Forest (n=300, max_depth=8), Gradient Boosting (n=300, lr=0.05, subsample=0.8)
-6. **Model Evaluation** : Compare MAE, RMSE, R² on test set + 5-Fold KFold cross-validation R² for each model
-7. **Permutation Feature Importance** : 30-repeat permutation test on held-out test set using best model; rank all 9 forcing variables
-8. **Scenario Forecasting** : Project temperature anomalies 2025–2050 under LOW / MED / HIGH emission pathways; annotate 2050 endpoints and Paris Agreement thresholds
-9. **Residual Analysis** : Residuals vs predicted scatter + residual distribution histogram for best model
-10. **Export All Outputs** : 6 publication-ready plots, model metrics text file, forecast CSV, and saved model (joblib)
+3. **Feature Engineering:** Use all 9 climate-forcing variables as predictors; apply `StandardScaler` for fair cross-model comparison
+4. **Train / Test Split:** 80/20 random shuffle split (116 train / 29 test, `random_state=42`)
+5. **Model Training:** Train three regressors: Ridge Regression, Random Forest (n=300, max_depth=8), Gradient Boosting (n=300, lr=0.05, subsample=0.8)
+6. **Model Evaluation:** Compare MAE, RMSE, R² on test set + 5-Fold KFold cross-validation R² for each model
+7. **Permutation Feature Importance:** 30-repeat permutation test on held-out test set using best model; rank all 9 forcing variables
+8. **Scenario Forecasting:** Project temperature anomalies 2025–2050 under LOW / MED / HIGH emission pathways; annotate 2050 endpoints and Paris Agreement thresholds
+9. **Residual Analysis:** Residuals vs predicted scatter + residual distribution histogram for best model
+10. **Export All Outputs:** 6 publication-ready plots, model metrics text file, forecast CSV, and saved model (joblib)
 
 ---
 
@@ -118,35 +118,35 @@ The dataset is synthetically generated to mirror realistic climate-forcing dynam
 ### 🔹 Historical Temperature Anomaly Trend (1880–2024)
 > 144-year warming trajectory with 10-year rolling mean and Paris Agreement +1.5°C / +2.0°C thresholds overlaid
 
-![Temperature Trend](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/temperature_trend.png)
+![Temperature Trend](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/temperature_trend.png)
 
 ---
 
 ### 🔹 Model Comparison — Actual vs Predicted (Test Set)
 > Side-by-side comparison of all three models against held-out test data
 
-![Model Comparison](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/model_comparison.png)
+![Model Comparison](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/model_comparison.png)
 
 ---
 
 ### 🔹 Permutation Feature Importance
 > Which climate-forcing variables matter most? Ranked by mean permutation importance on the test set (30 repeats)
 
-![Feature Importance](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/feature_importance.pngg)
+![Feature Importance](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/feature_importance.pngg)
 
 ---
 
 ### 🔹 Temperature Forecast to 2050 — Three Emission Scenarios
 > Projected warming under LOW (aggressive mitigation), MED (business-as-usual), and HIGH (accelerated emissions)
 
-![Forecast 2050](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/forecast_2050.png)
+![Forecast 2050](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/forecast_2050.png)
 
 ---
 
 ### 🔹 Residual Analysis — Best Model
 > Residuals vs predicted values + residual distribution to check model assumptions
 
-![Residual Analysis](outputs/https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/residual_analysis.png)
+![Residual Analysis](https://github.com/Nelvinebi/Predicting-Global-Temperature-Rise-Using-ML-Models/blob/b9787cabb3c53042877a3c2cd41d2d5d679b7ffc/Outputs/residual_analysis.png)
 
 > 📌 *All plots are saved at 150 dpi in the `/outputs/` folder.*
 
